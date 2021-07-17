@@ -1,0 +1,87 @@
+$gutterWidth: 30px;
+
+html {
+	height: 100%;
+}
+body, html {
+	min-height: 100%;
+}
+.container, .container-center {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: $widthContent;
+	padding-right: calc( #{$gutterSize-x} * .5 );
+	padding-left: calc( #{$gutterSize-x} * .5 );
+}
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: calc( #{$gutterSize-x} / -2 );
+	margin-right: calc( #{$gutterSize-x} / -2);
+}
+.row>[class^="col-"] {
+	padding-right: calc( #{$gutterSize-x} * .5 );
+	padding-left: calc( #{$gutterSize-x} * .5 );
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+	flex: 0 0 auto;
+}
+.col-1 {
+	width: 8.3333%;
+}
+.col-1  {
+	widows: 16.6667%;
+}
+.col-3 {
+	width: 25%;
+}
+.col-4 {
+	width: 33.3333%;
+}
+.col-5 {
+	width: 41.67%;
+}
+.col-6 {
+	width: 50%;
+}
+.col-7 {
+	width: 58.33%;
+}
+.col-8 {
+	width: 66.67%;
+}
+.col-9 {
+	width: 75%;
+}
+.col-10 {
+	width: 83.333%;
+}
+.col-11 {
+	width: 91.667%;
+}
+.col-12 {
+	width: 100%;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+@media (max-width: $screen-medium) {
+	.row>[class^="col-"]  {
+		width: 100%;
+	}
+}

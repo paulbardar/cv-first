@@ -1,0 +1,68 @@
+.cv-content {
+	ul {
+		margin: 0;
+	}
+}
+.content-title, .content-block-title {
+	font-weight: 400;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+
+}
+.content-title {
+	&:first-letter {
+		color: $orange;
+	}
+}
+
+.content-item {
+	margin-bottom: 30px;
+	padding-right: 30px;
+}
+.content-block {
+	margin-bottom: 30px;
+}
+.content-block-title {
+	text-transform: uppercase;
+}
+.markered-list {
+	margin: 0;
+	padding-left: 20px;
+	li {
+		padding-left: 20px;
+	}
+	li::marker {
+		color: $orange;
+		font-size: 20px;
+		line-height: 20px;
+	}
+}
+.unmarkered-list {
+	list-style: none;
+	padding: 0;
+	li {
+		padding-left: 0;
+	}
+}
+
+.evperience-items {
+	padding-left: 50px;
+	padding-bottom: 30px;
+	border-left: 3px solid $orange;
+}
+.experience-item {
+	margin-bottom: 30px;
+}
+@media (max-width: $screen-medium) {
+	.evperience-items {
+		border-width: 0;
+		padding-left: 0;
+	}
+	.markered-list {
+		// text-align: left;
+	}
+	.experience-item {
+		text-align: left;
+	}
+}
